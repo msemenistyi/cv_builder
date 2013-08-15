@@ -1,0 +1,34 @@
+{
+  "name": "cv_builder",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/msemenistyi/cv_builder"
+  },
+  "keywords": [
+    "cv",
+    "project",
+    "technologies"
+  ],
+  "author": "msemenistyi",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/msemenistyi/cv_builder/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-stylus": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.1"
+  },
+  "dependencies": {
+    "express": "~3.3.5"
+  }
+}
