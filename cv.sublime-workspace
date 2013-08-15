@@ -35,7 +35,7 @@
 			"file": "Gruntfile.js",
 			"settings":
 			{
-				"buffer_size": 1260,
+				"buffer_size": 1549,
 				"line_ending": "Windows"
 			}
 		},
@@ -43,7 +43,7 @@
 			"file": "client/javascripts/main.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 83,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "client/stylesheets/style.styl",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 109,
 				"line_ending": "Windows"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "client/index.jade",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 125,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,7 +67,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 58,
+				"buffer_size": 253,
 				"line_ending": "Windows"
 			}
 		}
@@ -75,12 +75,40 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 81.0,
 		"selected_items":
 		[
 			[
 				"instal",
 				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"git g",
+				"Package Control: Install Package"
+			],
+			[
+				"ss jad",
+				"Set Syntax: Jade"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"ss jso",
+				"Set Syntax: JSON"
 			],
 			[
 				"insta",
@@ -99,7 +127,7 @@
 				"Indentation: Convert to Spaces"
 			]
 		],
-		"width": 416.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -116,6 +144,9 @@
 	},
 	"file_history":
 	[
+		"/D/projects/cv_builder/bower.json",
+		"/D/projects/cv_builder/.bowerrc",
+		"/D/projects/cv_builder/.gitignore",
 		"/D/projects/tic-tac-hack/.gitignore",
 		"/D/projects/tic-tac-hack/app.js",
 		"/D/projects/tic-tac-hack/public/javascripts/Game.js",
@@ -141,6 +172,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'",
+			"styles",
+			"javascripts",
+			"s",
+			" ",
+			"javascripts",
+			"\"",
+			"'",
 			"jade",
 			"new-local",
 			"newGame_",
@@ -182,15 +221,15 @@
 					"file": "Gruntfile.js",
 					"settings":
 					{
-						"buffer_size": 1260,
+						"buffer_size": 1549,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1244,
-								1244
+								1478,
+								1478
 							]
 						],
 						"settings":
@@ -199,7 +238,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 261.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -209,15 +248,15 @@
 					"file": "client/javascripts/main.js",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 83,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								83,
+								83
 							]
 						],
 						"settings":
@@ -235,15 +274,15 @@
 					"file": "client/stylesheets/style.styl",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 109,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								42,
+								49
 							]
 						],
 						"settings":
@@ -261,20 +300,20 @@
 					"file": "client/index.jade",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 125,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								120,
+								120
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -287,15 +326,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 58,
+						"buffer_size": 253,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58,
-								58
+								253,
+								253
 							]
 						],
 						"settings":
@@ -353,6 +392,14 @@
 		"selected_items":
 		[
 			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				".bo",
+				".bowerrc"
+			],
+			[
 				"css",
 				"public/stylesheets/css.styl"
 			],
@@ -389,15 +436,15 @@
 		"selected_items":
 		[
 			[
+				"",
+				"/D/projects/tic-tac-hack/tth.sublime-project"
+			],
+			[
 				"tth",
 				"/D/projects/tic-tac-hack/tth.sublime-project"
 			],
 			[
 				"tt",
-				"/D/projects/tic-tac-hack/tth.sublime-project"
-			],
-			[
-				"",
 				"/D/projects/tic-tac-hack/tth.sublime-project"
 			]
 		],
@@ -407,6 +454,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 193.0,
+	"side_bar_width": 255.0,
 	"status_bar_visible": true
 }

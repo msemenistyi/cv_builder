@@ -1,10 +1,12 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+
 		javascripts: ['client/javascripts/**'],
 		server_js: ['*.js'],
 		styles: ['client/stylesheets/**'],
-		jade: ['client/index.jade'],
+		jades: ['client/index.jade'],
+
 		jshint: {
 			client: ['<%= javascripts %>'],
 			server_js: ['<%= server_js %>'],
@@ -39,25 +41,40 @@ module.exports = function (grunt) {
 		requirejs: {
 			compile: {
 				options: {
-					baseUrl: "client/javascripts",
-					mainConfigFile: "main.js",
-					out: "public/javascripts/app.js"
+					name: 'main',
+					baseUrl: 'client/javascripts',
+					mainConfigFile: 'client/javascripts/main.js',
+					out: 'public/javascripts/app.js'
 				}
 			}
 		},
 		watch:{
+			options:{
+				livereload: true
+			},
 			js: {
 				files: ['<%= javascripts %>'],
 				tasks: ['javascripts'] 
 			},
 			jade: {
-				files: ['<%= jade %>'],
+				files: ['<%= jades %>'],
 				tasks: ['jade'] 
 			},
 			stylus: {
-				files: ['<%= stylesheets %>'],
+				files: ['<%= styles %>'],
 				tasks: ['stylus'] 
 			}
+		},
+		copy: {
+			main: {
+				files: [
+					{
+						expand: true, cwd: 'client/javascripts/components/requirejs/', 
+						src: ['require.js'], dest: 'public/javascripts/', filter: 'isFile'}
+				]}
+		},
+		clean:{
+			pub: ['public/']
 		}
 	});
 
@@ -66,6 +83,8 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
 	grunt.loadNpmTasks('grunt-contrib-stylus');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 
-	grunt.registerTasks('default', ['jade', 'stylus','requirejs']);
+	grunt.registerTask('default', ['clean', 'jade', 'stylus','requirejs', 'copy']);
 };
