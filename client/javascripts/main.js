@@ -1,7 +1,8 @@
 require.config({
 	paths: {
-		lodash: 'lodash.min',
-		angular: 'angular.min'
+		lodash: 'bower/lodash/dist/lodash.min',
+		react: 'bower/react/react.min'
 	}
-
 });
+
+define(['app'], function(app){});

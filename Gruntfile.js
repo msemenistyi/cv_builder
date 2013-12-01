@@ -6,6 +6,7 @@ module.exports = function (grunt) {
 		server_js: ['*.js'],
 		styles: ['client/stylesheets/**'],
 		jades: ['client/index.jade'],
+		jsx: ['client/jsx/*'],
 
 		jshint: {
 			client: ['<%= javascripts %>'],
@@ -48,6 +49,17 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		react: {
+			app: {
+				options: {
+					extension:    'jsx',
+					ignoreMTime:  false 
+				},
+				files: {
+				'client/javascripts/components': 'client/jsx'
+				}
+			},
+		},
 		watch:{
 			options:{
 				livereload: true
@@ -63,6 +75,10 @@ module.exports = function (grunt) {
 			stylus: {
 				files: ['<%= styles %>'],
 				tasks: ['stylus'] 
+			},
+			jsx: {
+				files: ['<%= jsx %>'],
+				tasks: ['react']
 			}
 		},
 		copy: {
@@ -85,6 +101,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-react');
 
-	grunt.registerTask('default', ['clean', 'jade', 'stylus','requirejs', 'copy']);
+	grunt.registerTask('default', ['clean', 'jade','stylus', 'react', 'requirejs', 'copy']);
 };
