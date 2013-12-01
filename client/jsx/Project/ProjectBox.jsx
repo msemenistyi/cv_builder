@@ -16,7 +16,7 @@ define(['react', 'components/Project/ProjectList', 'components/Project/NewProjec
 			return (
 				<div>
 					<NewProjectButton onNewProject={this.handleNewProject}/>
-					<span> Projects list</span>
+					<div>Projects list</div>
 					<ProjectList projects={this.state.projects} />
 				</div>
 			);

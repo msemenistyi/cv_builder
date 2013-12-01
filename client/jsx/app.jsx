@@ -1,9 +1,10 @@
 /**
  * @jsx React.DOM
  */
-define(['react', 'components/Project/ProjectBox'], function(React, ProjectBox){
+define(['react', 'components/Project/ProjectBox', 'components/Login/LoginBox'], 
+	function(React, ProjectBox, LoginBox){
 	React.renderComponent(
-		<ProjectBox />,
+		<LoginBox />,
 		document.getElementById('container')
 	);
 });
