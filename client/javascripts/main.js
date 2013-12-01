@@ -5,4 +5,4 @@ require.config({
 	}
 });
 
-define(['app'], function(app){});
+define(['components/app'], function(app){});

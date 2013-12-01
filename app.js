@@ -7,6 +7,8 @@ var server = http.createServer(app);
 
 app.use(express.static(__dirname + '/public'));
 
+app.use(express.static(__dirname + '/client/javascripts'));
+
 
 var port = 1212;
 app.listen(port);

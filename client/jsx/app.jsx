@@ -1,9 +1,9 @@
 /**
  * @jsx React.DOM
  */
-define(['react', 'ProjectList'], function(React, ProjectList){
+define(['react', 'components/Project/ProjectBox'], function(React, ProjectBox){
 	React.renderComponent(
-		<ProjectList />,
-		document.body
+		<ProjectBox />,
+		document.getElementById('container')
 	);
 });

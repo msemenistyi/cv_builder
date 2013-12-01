@@ -2,11 +2,11 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
-		javascripts: ['client/javascripts/**'],
+		javascripts: ['client/javascripts/components/**'],
 		server_js: ['*.js'],
 		styles: ['client/stylesheets/**'],
 		jades: ['client/index.jade'],
-		jsx: ['client/jsx/*'],
+		jsx: ['client/jsx/**/*'],
 
 		jshint: {
 			client: ['<%= javascripts %>'],
@@ -85,7 +85,7 @@ module.exports = function (grunt) {
 			main: {
 				files: [
 					{
-						expand: true, cwd: 'client/javascripts/components/requirejs/', 
+						expand: true, cwd: 'client/javascripts/bower/requirejs/', 
 						src: ['require.js'], dest: 'public/javascripts/', filter: 'isFile'}
 				]}
 		},
@@ -104,4 +104,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-react');
 
 	grunt.registerTask('default', ['clean', 'jade','stylus', 'react', 'requirejs', 'copy']);
+	grunt.registerTask('javascripts', ['jshint']);
 };
